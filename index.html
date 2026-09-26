@@ -516,3 +516,50 @@ name="sound-volume"
 min="1"
 max="100"
 />
+
+
+
+
+
+
+
+
+
+
+
+<label for="comment">ваш комментарий</label>
+<textarea id="comment" name="user-comment"></textarea>
+
+
+<label for="comment">ваш комментарий:</label>
+<textarea
+    id="comment"
+    name="user-comment">статья - топ автор пиши ещё!</textarea>
+
+
+<form action="">
+<label for="sity">ваш город:</label>
+<select id="sity" name="user-sity" required>
+    <option disabled value="" selected>не выбрано</option>
+    <option value="moscow">москва</option>
+    <option value="petersburg">санкт-петербург</option>
+    <option value="ekaterinburg">екатиринбург</option>
+    <option value="samara">самара</option>
+    <!-- ... -->
+</select>
+<button>send</button>
+</form>
+
+<label for="office">выберете офис</label>
+<select id="office" name="office">
+    <optgroup label="центральный район">
+        <option value="center-1">ул. пушкина, д. 24</option>
+        <option value="center-2">пр. ломоносова, д. 1</option>
+        <option value="center-3">бул. есинина, д. 3к6</option>
+    </optgroup>
+    <optgroup label="южный район">
+        <option value="south-1">ул. ленина, д. 55</option>
+        <option value="south-2">пл. революции, д. 10</option>
+    </optgroup>
+    <!-- ... -->
+</select>

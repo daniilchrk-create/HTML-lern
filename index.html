@@ -245,29 +245,29 @@
 
 
     <tbody>
-    <tr>
-        <td>холодная вода</td>
-        <td>куб.м</td>
-        <td>3</td>
-        <td>4</td>
-        <td>1000.00</td>
+        <tr>
+            <td>холодная вода</td>
+            <td>куб.м</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1000.00</td>
 
-    </tr>
-    
-    <tr>
-        <!-- ... -->
-    </tr>
+        </tr>
 
-</tbody>
+        <tr>
+            <!-- ... -->
+        </tr>
+
+    </tbody>
 
 
 
-<tfoot>
-    <tr>
-        <td>итого к оплате за рассчетный период</td>
-        <td colspan="4">9999.00</td>
-    </tr>
-</tfoot>
+    <tfoot>
+        <tr>
+            <td>итого к оплате за рассчетный период</td>
+            <td colspan="4">9999.00</td>
+        </tr>
+    </tfoot>
 </table>
 
 
@@ -283,7 +283,7 @@
     <fireldest>
         группа полей ввода...
     </fireldest>
-    
+
     <fieldset>
         ещё одна группа полей ввода...
     </fieldset>
@@ -322,244 +322,678 @@
 
 
 <labelfor="login">логин:</label>
+    <input />
+
+    <label for="login">логин:</label>
+    <input id="login" name="user-login" />
+
+    <label for="review">ваш отзыв:</label>
+    <input id="review" name="user-rewiew" value="отлично" />
+
+    <label for="login">логин:</label>
+    <input id="login" name="user-login" type="text" />
+
+
+
+
+
+
+
+
+
+
+    <form>
+        <p>
+            <label for="email">электронная почта:</label>
+            <input id="email" name="user-email" type="email" />
+        </p>
+        <p>
+            <button type="submit">отправить</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="user profile">
+                ссылка на профиль в любой соц. сети:
+            </label>
+            <input id="user-profile" name="user-profile" type="url" />
+        </p>
+        <p>
+            <button type="submit">отправить</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="user-phone">номер телефона:</label>
+            <input id="user-phone" name="user-phone" type="tel" />
+        </p>
+        <p>
+            <button type="submit">отправить</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="search-query">введите поисковой запрос:</label>
+            <input id="search-query" name="search-query" type="search" />
+        </p>
+        <p>
+            <button type="submit">поиск</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="user-age">ваш возраст:</label>
+            <input id="user-age" name="user-age" type="number" />
+        </p>
+        <p>
+            <button type="submit">отправить</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="user-pasword">ваш пароль:</label>
+            <input id="user-pasword" name="user-pasword" type="password" />
+        </p>
+        <p>
+            <button type="submit">войти</button>
+        </p>
+    </form>
+
+
+
+    <p>
+        <label for="fulldate">
+            введите дату в формате:день,месяц,год:
+        </label>
+        <input type="date" id="fulldate" name="fulldate" />
+    </p>
+
+    <p>
+        <label for="prefer-color">
+        </label>
+        <input id="prefer-color" name="prefer-color" type="color" />
+    </p>
+
+
+    <form>
+        <p>
+            <label for="user-document">прикрепите ваш документ:</label>
+            <input id="user-document" name="user-document" type="file" />
+        </p>
+
+        <p>
+            <label for="user-documents">прикрепите ваши документы</label>
+            <input id="user-documents" name="user-documents" type="file" multiple />
+        </p>
+
+        <p>
+            <button type="submit">отправить</button>
+        </p>
+    </form>
+
+
+
+    <p>
+        <input type="checkbox" id="agreement" name="agreement" value="agreement" />
+        <label for="agreement">я согласень со всеми условиями</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="agreement-total" name="agreement-total" value="agreement-total" checked />
+        <label for="=agreement-total">
+            я точно точно согласень со всеми условиями
+        </label>
+    </p>
+
+
+
+
+
+    <form>
+        <fieldset>
+            <legend>ваш пол</legend>
+        </fieldset>
+        <p>
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">муж.</label>
+        </p>
+        <p>
+            <input type="radio" id="female" name="gender" value="female" checked />
+            <label for="female">жен.</label>
+        </p>
+        </fieldset>
+    </form>
+
+    <label for="sound-volume">
+        громкость звука (от 1 до 100):
+    </label>
+    <input type="range" id="sound-volume" name="sound-volume" min="1" max="100" />
+
+
+
+
+
+
+
+
+
+
+
+    <form>
+        <p>
+            <label for="login">логин:</label>
+            <input id="login" name="user-login" required />
+        </p>
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" value="agreement" required />
+            <label for="agreement">я согласень со всеми условиями</label>
+        </p>
+        <p>
+            <label for="message">ваще сообщение:</label>
+            <textarea id="message" name="user-message" required></textarea>
+        </p>
+        <p>
+            <label for="sity">ваш город:</label>
+            <select id="sity" name="user-sity" required>
+                <option value="" disabled selected>не выбрано</option>
+                <option value="moscow">москва</option>
+                <option value="petersburg">санкт-петербург</option>
+                <!-- ... -->
+            </select>
+        </p>
+        <button type="submit">send</button>
+    </form>
+
+
+
+
+
+
+    <form>
+        <p>
+            <label for="login">логин:</label>
+            <input id="login" name="user-login" disabled />
+        </p>
+
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" value="agreement" disabled />
+            <label for="agreement">я согласень со всеми условиями</label>
+        </p>
+
+        <p>
+            <label for="message">ваше сообщение:</label>
+            <textarea id="message" name="user-message" disabled></textarea>
+        </p>
+
+        <p>
+            <label for="city">ваш город:</label>
+            <select id="city" name="user-sity" disabled>
+                <option></option>
+                <option value="moscow">москва</option>
+                <option value="petersburg">санкт-петербург</option>
+                <option value="ekaterinburg">екатеринбург</option>
+                <option value="samara">самара</option>
+                <!-- ... -->
+            </select>
+        </p>
+
+        <p>
+            <label for="area">ваш район:</label>
+            <select id="area" name="user-area">
+                <option value="center">центральный</option>
+                <option value="norht" disabled>северный</option>
+                <option value="south">южный</option>
+                <!-- ... -->
+            </select>
+        </p>
+
+        <p>
+            <label for="street">ваша улица:</label>
+            <select id="street" name="user-street">
+                <optgroup label="центральный район">
+                    <option value="street-0">улица 0</option>
+                </optgroup>
+                <optgroup label="cеверный район">
+                    <option value="street-1">улица 1</option>
+                    <option value="street-2">улица 2</option>
+                </optgroup>
+                <optgroup label="южный район">
+                    <option value="street-3">улица 3</option>
+                    <option value="street-4">улица 4</option>
+                </optgroup>
+                <!-- ... -->
+            </select>
+        </p>
+
+        <fieldset disabled>
+            <!-- все поля этой группы будут недоступны -->
+            <p>
+                <label for="request-number">номер оброшения:</label>
+                <input id="request-number" name="user-request-number" value="1001" />
+            </p>
+            <p>
+                <label for="email">ваш email:</label>
+                <input id="email" name="user-email" value="daniil121@m.com" />
+            </p>
+        </fieldset>
+
+        <button type="submit" disabled>send</button>
+    </form>
+
+    </body>
+
+    </html>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>атрибут readonly</title>
+</head>
+<body>
+
+    <form>
+        <p>
+            <label for="request-number">ваш номер оброшения:</label>
+            <input
+            id="request-number"
+            name="user-request-number"
+            value="7665610999"
+            readonly
+            />
+        </p>
+    </form>
+
+</body>
+</html>
+
+
+
+
+<form>
+<p>
+    <label for="request-number">ваш номер оброшения</label>
+    <input
+    id="request-number"
+    name="user-request-number"
+    value="729767410"
+    readonly
+    />
+</p>
+
+
+<p>
+    <label for="order-numder">ваш номер в очериди:</label>
+    <input
+    id="order-numder"
+    name="user-request-number"
+    value="5"
+    disabled
+    />
+</p>
+</form>
+
+
+
+
+<body>
+
+    <form>
+        <p>
+            <label for="name">имя:</label>
+            <input
+                id="name"
+                name="user-name"
+                placeholder="введите ваш имя"
+            />
+        </p>
+        <p>
+            <label for="review">отзыв:</label>
+            <textarea
+            id="review"
+            name="user-rewiew"
+            placeholder="введите ваш отзыв"
+            ></textarea>
+        </p>
+    </form>
+
+</body>
+</html>
+
+
+
+
+<p>
+    <label for="field-1">стандартная экранная клавиатура:</label>
+    <input id="field-1" name="field-1" inputmode="text" />
+</p>
+
+<p>
+    <label for="field-2">экранная клавиатура не появится вовсе:</label>
+    <input id="field-2" name="field-2" inputmode="none" />
+</p>
+
+<p>
+    <label for="field-3">экранная клавиатура с цыфрами:</label>
+    <input id="field-3" name="field-3" inputmode="numeric" />
+</p>
+
+<p>
+    <label for="field-4">экранная клавиатура с цыфрами и разделителем:</label>
+    <input id="field-4" name="field-4" inputmode="decimal" />
+</p>
+
+<p>
+    <label for="field-5">экранная клавиатура для удобного ввода телефона:</label>
+    <input id="field-5" name="field-5" inputmode="tel">
+</p>
+
+
+
+<p>
+    <label for="passport-number-1">
+        номер паспорта(только цифры):
+    </label>
+    <input
+    id="passport-number-1"
+    name="user-passport-number-1"
+    inputmode="numeric"
+    />
+</p>
+
+<p>
+    <label for="passport-number-2">
+        номер паспорта(только цифры):
+    </label>
+    <input
+    id="passport-number-2"
+    name="user-passport-number-2"
+    type="number"
+    />
+</p>
+
+
+
+
+<p>
+    <label for="name-1">ваше имя:</label>
+    <input id="name-1" name="name" />
+</p>
+
+<p>
+    <label for="name-2">ваше имя:</label>
+    <input id="name-2" name="name" autocomplete="on" /> 
+</p>
+
+<p>
+    <label for="name-3">ваше имя:</label>
+    <input id="name-3" name="name" autocomplete="off" />
+</p>
+
+
+
+<p>
+    <label for="name">ваше имя:</label>
+    <input id="name" name="name" />
+</p>
+
+<p>
+    <label for="email">ваш email:</label>
+    <input id="email" name="email" type="email" />
+</p>
+
+<p>
+    <label for="currentpassword">ваше текущий пароль:</label>
+    <input id="currentpassword" name="currentpassword" />
+</p>
+
+<p>
+    <label for="newpassword">ваше новый пароль:</label>
+    <input id="newpassword" name="newpassword" />
+</p>
+
+<p>
+    <label for="postal-code">ваше почтовый пароль:</label>
+    <input id="postal-code" name="postal-code" />
+</p>
+
+<p>
+    <label for="cc-number">номер банковской карты:</label>
+    <input id="cc-number" name="cc-number" />
+</p>
+
+
+<button>button 1</button>
+<button autofocus>button 2</button>
+
+
 <input />
 
-<label for="login">логин:</label>
-<input id="login" name="user-login" />
+<textarea></textarea>
 
-<label for="review">ваш отзыв:</label>
-<input id="review" name="user-rewiew" value="отлично"/>
-
-<label for="login">логин:</label>
-<input id="login" name="user-login" type="text" />
-
-
-
-
-
-
-
-
-
-
-<form>
-    <p>
-        <label for="email">электронная почта:</label>
-        <input id="email" name="user-email" type="email"  />
-    </p>
-    <p>
-        <button type="submit">отправить</button>
-    </p>
-</form>
-
-
-<form>
-    <p>
-        <label for="user profile">
-            ссылка на профиль в любой соц. сети:
-        </label>
-        <input id="user-profile" name="user-profile" type="url" />
-    </p>
-    <p>
-        <button type="submit">отправить</button>
-    </p>
-</form>
-
-
-<form>
-    <p>
-        <label for="user-phone">номер телефона:</label>
-        <input id="user-phone"name="user-phone" type="tel" />
-    </p>
-    <p>
-        <button type="submit">отправить</button>
-    </p>
-</form>
-
-
-<form>
-    <p>
-        <label for="search-query">введите поисковой запрос:</label>
-        <input id="search-query" name="search-query" type="search" />
-    </p>
-    <p>
-        <button type="submit">поиск</button>
-    </p>
-</form>
-
-
-<form>
-    <p>
-        <label for="user-age">ваш возраст:</label>
-        <input id="user-age" name="user-age" type="number" />
-    </p>
-    <p>
-        <button type="submit">отправить</button>
-    </p>
-</form>
-
-
-<form>
-    <p>
-        <label for="user-pasword">ваш пароль:</label>
-        <input id="user-pasword" name="user-pasword" type="password"  />
-    </p>
-    <p>
-        <button type="submit">войти</button>
-    </p>
-</form>
+<button onclick="alert('хватит на меня нажимать!')">
+нажми на меня
+</button>
 
 
 
 <p>
-    <label for="fulldate">
-    введите дату в формате:день,месяц,год:
-    </label>
-    <input type="date" id="fulldate" name="fulldate" />
-</p>
-
-<p>
-    <label for="prefer-color">
-    </label>
+    <!--поле вне формы-->
+    <label for="email">ваш email:</label>
     <input
-    id="prefer-color"
-    name="prefer-color"
-    type="color"
+    id="email"
+    name="email"
+    type="email"
+    form="user-info"
     />
+    
 </p>
 
-
-<form>
+<form id="user-info">
     <p>
-        <label for="user-document">прикрепите ваш документ:</label>
-        <input id="user-document" name="user-document" type="file" />
+        <label for="name">ваше имя:</label>
+        <input id="name" name="name" />
     </p>
 
     <p>
-        <label for="user-documents">прикрепите ваши документы</label>
-       <input
-       id="user-documents"
-       name="user-documents"
-       type="file"
-       multiple
-       />
-    </p>
-
-    <p>
-        <button type="submit">отправить</button>
+        <button type="submit">
+            отправить
+        </button>
     </p>
 </form>
 
 
 
-<p>
-    <input
-    type="checkbox"
-    id="agreement"
-    name="agreement"
-    value="agreement"
-    />
-    <label for="agreement">я согласень со всеми условиями</label>
-</p>
-
-<p>
-    <input
-    type="checkbox"
-    id="agreement-total"
-    name="agreement-total"
-    value="agreement-total"
-    checked
-    />
-    <label for="=agreement-total">
-    я точно точно согласень со всеми условиями
-    </label>
-</p>
-
-
 
 
 
 <form>
-    <fieldset>
-        <legend>ваш пол</legend>
-    </fieldset>
     <p>
+        <label for="password">пароль (от 6 до 12 символов):</label>
         <input
-        type="radio"
-        id="male"
-        name="gender"
-        value="male"
-        checked
+        id="password"
+        name="password"
+        type="password"
+        minlength="6"
+        maxlength="12"
         />
-        <label for="male">муж.</label>
     </p>
     <p>
-        <input
-        type="radio"
-        id="female"
-        name="gender"
-        value="female"
-        checked
-        />
-        <label for="female">жен.</label>
+        <label for="message">сообщение:</label>
+        <textarea
+        id="message"
+        name="message"
+        minlength="10"
+        maxlength="100"
+        ></textarea>
     </p>
-    </fieldset>
+    <p>
+        <button type="submit">отправить</button>
+    </p>
 </form>
 
-<label for="sound-volume">
-    громкость звука (от 1 до 100):
-</label>
+<h1>регестрация</h1>
+
+<p>
+    <label for="name">ваше имя:</label>
 <input
-type="range"
-id="sound-volume"
-name="sound-volume"
-min="1"
-max="100"
+    id=""
+    name=""
+    style="font-family: monospace"
+    size="10"
 />
+</p>
+
+<p>
+<label for="full-name">ваше ФИО:</label>
+<input
+    id="full-name"
+    name="full-name"
+    size="20"
+/>
+</p>
 
 
 
 
 
+<p>
+    <label for="planet">ваша планета:</label>
+    <select id="planet" name="planet">
+    <option value="earht">земля</option>
+    <option value="mercury">меркурий</option>
+    </select>
+</p>
 
-
-
-
-
-
-<label for="comment">ваш комментарий</label>
-<textarea id="comment" name="user-comment"></textarea>
-
-
-<label for="comment">ваш комментарий:</label>
-<textarea
-    id="comment"
-    name="user-comment">статья - топ автор пиши ещё!</textarea>
-
-
-<form action="">
-<label for="sity">ваш город:</label>
-<select id="sity" name="user-sity" required>
-    <option disabled value="" selected>не выбрано</option>
+<p>
+    <label for="sity">ваш город:</label>
+    <select id="sity" name="city" size="3">
     <option value="moscow">москва</option>
-    <option value="petersburg">санкт-петербург</option>
-    <option value="ekaterinburg">екатиринбург</option>
-    <option value="samara">самара</option>
-    <!-- ... -->
-</select>
-<button>send</button>
+    <option value="spb">санкт-петербург</option>
+    <option value="ekb">екатеринбург</option>
+    <option value="nsb">носибирск</option>
+    <option value="chlb">челябинск</option>
+    </select>
+</p>
+
+
+
+
+<p>
+    <label for="sities">ваш города:</label>
+    <select id="sities" name="sities" size="1" multiple>
+    <option value="moscow">москва</option>
+    <option value="spb">санкт-петербург</option>
+    <option value="ekb">екатеринбург</option>
+    <option value="nsb">носибирск</option>
+    <option value="chlb">челябинск</option>
+    </select>
+</p>
+
+
+
+<h1>регестрация</h1>
+
+<form>
+    <p>
+        <label for="username">имя пользователя:</label>
+        <input 
+        id="username"
+        name="username"
+        pattern="[a-zA-Z]+"
+        oninvalid="setCustomValidity('только ластинские символы')"
+        />
+    </p>
+    <button type="submit">отправить</button>
 </form>
 
-<label for="office">выберете офис</label>
-<select id="office" name="office">
-    <optgroup label="центральный район">
-        <option value="center-1">ул. пушкина, д. 24</option>
-        <option value="center-2">пр. ломоносова, д. 1</option>
-        <option value="center-3">бул. есинина, д. 3к6</option>
-    </optgroup>
-    <optgroup label="южный район">
-        <option value="south-1">ул. ленина, д. 55</option>
-        <option value="south-2">пл. революции, д. 10</option>
-    </optgroup>
-    <!-- ... -->
-</select>
+
+<p>
+    <label for="message-1">сообщение 1:</label>
+    <textarea
+    id="message-1"
+    name="message-1"
+    spellcheck="true"
+    ></textarea>
+</p>
+
+<p>
+    <label for="message-2">сообщение 2:</label>
+    <textarea
+    id="message-2"
+    name="message-2"
+    spellcheck="false"
+    ></textarea>
+</p>
+
+
+<h1>регестрация</h1>
+
+<form>
+    <p>
+        <label for="name">имя:</label>
+        <input id="required" name="name" required />
+    </p>
+    <p>
+        <label for="password">пароль:</label>
+        <input
+        id="password"
+        name="password"
+        type="password"
+        required
+        />
+    </p>
+    <p>
+        <button type="submit">отправить</button>
+    </p>
+</form>
+
+
+<label for="message">сообщение:</label>
+<textarea
+id="message"
+name="message"
+rows="5"
+cols="5"
+></textarea>
+
+
+
+<h1>регестрация:</h1>
+
+<form>
+    <p>
+        <label for="message-soft-wrap">сообщение (soft wrap):</label>
+        <textarea
+        id="message-soft-wrap"
+        name="message-soft-wrap"
+        wrap="soft"
+        >вдыадывоаыаоыдвоаддыадыаодылаыдаоадыоадлаовыаошыаоывдо</textarea>
+    </p>
+
+    <p>
+        <label for="message-hard-wrap">сообщение(hard wrap):</label>
+        <textarea
+        id="message-hard-wrap"
+        name="message-hard-wrap"
+        cols="10"
+        wrap="hard"
+        >вдыадывоаыаоыдвоаддыадыаодылаыдаоадыоадлаовыаошыаоывдо</textarea>
+    </p>
+
+    <p>
+        <button type="submit">отправить</button>
+    </p>
+</form>

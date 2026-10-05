@@ -1010,11 +1010,54 @@
             </div>
         </div>
 
-
-
-
-
-
-
     </body>
     </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <html lang="">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>hidden</title>
+    </head>
+
+    <body>
+        <p>параграф 1</p>
+        <p hidden>параграф 2</p>
+        <p>параграф 3</p>
+
+    </body>
+    </html>
+
+
+    <title>tabindex</title>
+    <style>
+        p:focus {
+            outline: 1px solid red;
+        }
+    </style>
+    </head>
+    <body>
+        <button>кнопка 1</button>
+        <Button>кнопка 2</Button>
+        <Button>кнопка 3</Button>
+        <p tabindex="1">параграф 1</p>
+        <p tabindex="2">параграф 2</p>
+        <p tabindex="3">параграф 3</p>
+    </body>
